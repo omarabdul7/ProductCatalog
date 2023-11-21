@@ -18,10 +18,10 @@ public class ProductTest {
 
     @Test
     public void checkProductPrice() {
-        // I am making this test to fail
         Product aProduct = new Product("1", "DELL MONITOR", 180);
-        assertEquals("Check the price of the product", "0", aProduct.getPrice());
+        assertEquals("Check the price of the product", 180, aProduct.getPrice(), 0);
     }
+
 
 
 }
